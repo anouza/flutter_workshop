@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>325719993672-9ac1otebdeee0l6trikdovokk7ttlrfn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.325719993672-9ac1otebdeee0l6trikdovokk7ttlrfn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCptgoi5CO6msiDRtim2apxhgjEFZ5bdDg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>325719993672</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterWorkshop.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>flutter-workshop-swg10g2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flutter-workshop-swg10g2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:325719993672:ios:7ee7c667d699e6f203977d</string>
+	<key>DATABASE_URL</key>
+	<string>https://flutter-workshop-swg10g2-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325719993672",
+    "firebase_url": "https://flutter-workshop-swg10g2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "flutter-workshop-swg10g2",
+    "storage_bucket": "flutter-workshop-swg10g2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325719993672:android:501a0054e85921d103977d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_workshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325719993672-ievr25l4cs9hvq9d7021pbne4ipddm92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCaHCnRgr6DR-7ve0OCHO955ZGbkfYwVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325719993672-ievr25l4cs9hvq9d7021pbne4ipddm92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
