@@ -124,7 +124,7 @@ class _TabsPageState extends State<TabsPage> {
                 ListTile(
                   title: const ListTile(
                     leading: Icon(Icons.currency_exchange),
-                    title: Text("Rate Conversion"),
+                    title: Text("Rate Converter"),
                   ),
                   onTap: () {
                     tabIndexProvider.updateIndex(3);
@@ -218,7 +218,7 @@ class _TabsPageState extends State<TabsPage> {
           titleText = "Loan Calculator";
           break;
         case 3:
-          titleText = "Rate Conversion";
+          titleText = "Rate Converter";
           break;
         default:
       }

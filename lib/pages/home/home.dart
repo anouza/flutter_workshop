@@ -411,7 +411,7 @@ class _HomePageState extends State<HomePage> {
                       Expanded(
                         child: IconTextButton(
                           icon: Icons.currency_exchange,
-                          text: 'Calculator',
+                          text: 'Converter',
                           onPressed: () {
                             // Handle button press here
                             tabIndexProvider.updateIndex(3);
@@ -426,8 +426,12 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         const SizedBox(
-          height: 20,
+          height: 8,
         ),
+        // const Text(
+        //   'Exchange Rates',
+        //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+        // ),
         Consumer<AppDataProvider>(builder: (context, appDataProvider, child) {
           var exrateList = appDataProvider.data['exrtList'];
           if (exrateList != null) {
@@ -457,13 +461,24 @@ class _HomePageState extends State<HomePage> {
     return SizedBox(
       width: double.infinity,
       child: DataTable(
+        // columns: <DataColumn>[
+        //   DataColumn(
+        //     label: SizedBox(),
+        //   ),
+        //   DataColumn(
+        //     label: SizedBox(),
+        //   ),
+        //   DataColumn(
+        //     label: SizedBox(),
+        //   ),
+        // ],
         columns: <DataColumn>[
           DataColumn(
             label: Expanded(
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: const Text(
-                  'Exchange Rates',
+                  'Exchanges',
                   // style: TextStyle(fontStyle: FontStyle.italic),
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
