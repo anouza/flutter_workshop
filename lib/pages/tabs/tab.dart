@@ -181,15 +181,15 @@ class _TabsPageState extends State<TabsPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.attach_money_sharp),
-              label: 'Exchange Rates',
+              label: 'Rates',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.percent),
-              label: 'Loan Calculator',
+              label: 'Loan',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.currency_exchange),
-              label: 'Rate Conversion',
+              label: 'Convert',
             )
           ],
           currentIndex: _selectedIndex, //New

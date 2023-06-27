@@ -383,7 +383,7 @@ class _HomePageState extends State<HomePage> {
                   height: 20,
                 ),
                 SizedBox(
-                  width: 500,
+                  width: MediaQuery.of(context).size.width,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     mainAxisSize: MainAxisSize.max,
@@ -411,7 +411,7 @@ class _HomePageState extends State<HomePage> {
                       Expanded(
                         child: IconTextButton(
                           icon: Icons.currency_exchange,
-                          text: 'Exchange Calculator',
+                          text: 'Calculator',
                           onPressed: () {
                             // Handle button press here
                             tabIndexProvider.updateIndex(3);

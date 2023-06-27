@@ -97,118 +97,125 @@ readUser();
         ),
         overlayOpacity: 0.8,
       child: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: [
-                0.5,
-                0.85
-              ],
-                  colors: [
-                Color(0xFF1C89FF),
-                Color(0xFF0E4582),
-              ])),
-          child: Form(
-              key: _formKey,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.01,
-                      ),
-                      Image.asset(
-                        'assets/images/logo.png',
-                        height: 150,
-                      ),
-                      const Padding(padding: EdgeInsets.all(10)),
-                      const Text(
-                        "SWG10 Leasing",
-                        style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 37,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      const Text(
-                        "ເພື່ອອະນາຄົດທາງການເງິນຂອງທ່ານ",
-                        style: const TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                      const SizedBox(
-                        height: 80,
-                      ),
-                      SizedBox(
-                        width: 300,
-                        child: TextFormField(
-                          controller: _user,
-                          style: const TextStyle(color: Colors.white),
-                          decoration: const InputDecoration(
-                            border: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white)),
-                            enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white)),
-                            fillColor: Colors.white,
-                            labelText: 'User ID',
-                            labelStyle: TextStyle(color: Colors.white),
-                          ),
-                          validator: (value) {
-                            if (value!.isEmpty) {
-                              return 'Please input your User ID';
-                            }
-                            return null;
-                          },
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      SizedBox(
-                        width: 300,
-                        child: TextFormField(
-                          controller: _passwd,
-                          style: const TextStyle(color: Colors.white),
-                          decoration: const InputDecoration(
-                            border: OutlineInputBorder(),
-                            enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white)),
-                            labelText: 'Password',
-                            labelStyle: TextStyle(color: Colors.white),
-                          ),
-                          obscureText: true,
-                          validator: (value) {
-                            if (value!.isEmpty) {
-                              return 'Please input your password';
-                            }
-                            return null;
-                          },
-                          onFieldSubmitted: (value) => doLogin(),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      SizedBox(
-                        width: 300,
-                        child: customButton("ເຂົ້າສູ່ລະບົບ", onPressed: doLogin),
-                      ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height / 6,
-                      ),
-                      const Text(
-                        "ແອັບນີ້ອອກແບບ ແລະ ພັດທະນາເພື່ອການສຶກສາ",
-                        style: const TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                      const Text(
-                        "ຂອງຫຼັກສູດປະລິນຍາໂທ ສາຂາ ຊັອບແວ, ຮຸ່ນທີ່ 10 ເທົ່ານັ້ນ",
-                        style: const TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
-                  )
+        body: SingleChildScrollView(
+          child: Container(
+            height: MediaQuery.of(context).size.height,
+            decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    stops: [
+                  0.5,
+                  0.85
                 ],
-              )),
+                    colors: [
+                  Color(0xFF1C89FF),
+                  Color(0xFF0E4582),
+                ])),
+            child: Form(
+                key: _formKey,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.01,
+                        ),
+                        Image.asset(
+                          'assets/images/logo.png',
+                          height: 150,
+                        ),
+                        const Padding(padding: EdgeInsets.all(10)),
+                        const Text(
+                          "SWG10 Leasing",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 37,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        const Text(
+                          "ເພື່ອອະນາຄົດທາງການເງິນຂອງທ່ານ",
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        const SizedBox(
+                          height: 80,
+                        ),
+                        SizedBox(
+                          width: 300,
+                          child: TextFormField(
+                            controller: _user,
+                            style: const TextStyle(color: Colors.white),
+                            decoration: const InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white)),
+                              enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white)),
+                              fillColor: Colors.white,
+                              labelText: 'User ID',
+                              labelStyle: TextStyle(color: Colors.white),
+                            ),
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Please input your User ID';
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        SizedBox(
+                          width: 300,
+                          child: TextFormField(
+                            controller: _passwd,
+                            style: const TextStyle(color: Colors.white),
+                            decoration: const InputDecoration(
+                              border: OutlineInputBorder(),
+                              enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white)),
+                              labelText: 'Password',
+                              labelStyle: TextStyle(color: Colors.white),
+                            ),
+                            obscureText: true,
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Please input your password';
+                              }
+                              return null;
+                            },
+                            onFieldSubmitted: (value) => doLogin(),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        SizedBox(
+                          width: 300,
+                          child: customButton("ເຂົ້າສູ່ລະບົບ", onPressed: doLogin),
+                        ),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.02,
+                        ),
+                        const Text(
+                          "ແອັບນີ້ອອກແບບ ແລະ ພັດທະນາເພື່ອການສຶກສາ",
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        const Text(
+                          "ຂອງຫຼັກສູດປະລິນຍາໂທ ສາຂາ ຊັອບແວ",
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        const Text(
+                          "ຮຸ່ນທີ່ 10 ເທົ່ານັ້ນ",
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                      ],
+                    )
+                  ],
+                )),
+          ),
         ),
       ),
     );
