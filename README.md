@@ -2,7 +2,7 @@
 
 A Flutter project from SWG10 students, CEIT Department, Faculty of Engineering, National University of Laos - class 2023.
 
-For educational purposes only. Please use this project with cautions.
+For educational purposes only. Please use this project with caution.
 
 ## Getting Started
 
